@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack ./src/index.js ./dist/bundle.js --module-bind 'css=style-loader!css-loader' && firefox index.html"
+    "dev": "./node_modules/.bin/webpack && firefox index.html"
   },
   "author": "justin.chang",
   "license": "ISC",
