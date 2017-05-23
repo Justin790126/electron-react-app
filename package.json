@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack && firefox index.html"
+    "dev": "./node_modules/.bin/webpack --progress --colors && firefox index.html",
+    "dev2": "./node_modules/.bin/webpack-dev-server --progress --colors --watch"
   },
   "author": "justin.chang",
   "license": "ISC",
