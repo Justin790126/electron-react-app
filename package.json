@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/webpack --progress --colors && firefox index.html",
-    "dev2": "./node_modules/.bin/webpack-dev-server --progress --colors --watch"
+    "dev2": "./node_modules/.bin/webpack-dev-server --progress --colors --watch",
+    "hot-dev": "./node_modules/.bin/webpack-dev-server --devtool eval --progress --colors --hot --content-base dist"
   },
   "author": "justin.chang",
   "license": "ISC",
