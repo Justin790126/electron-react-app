@@ -10,7 +10,9 @@ echo "module.exports = {" >> ${configName}
 
 read -p "Where is your built entry point (default: ./src/index.js) ? " path
 if [[ $path = "" ]]; then
+  mkdir "src";
   path="./src/index.js"
+  touch ${path}
 fi
 echo "  entry: '${path}', " >> ${configName}
 
