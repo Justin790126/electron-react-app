@@ -31,32 +31,32 @@ case $yn in
   [Yy]* )
     echo "Start install Eslint modules ..."
     npm install --save-dev eslint eslint-loader
-    
+
     read -p "Do you want Eslint template ? (yes/no) " yn
     case $yn in
       [Yy]* )
         ./node_modules/.bin/eslint eslint --init
         ;;
-          * ) 
-        echo "\n"    
+          * )
+        echo "\n"
         ;;
     esac
 
-    
+
         ;;
 
       * )
         ;;
 esac
 
-    
+
 echo "\n"
-   
+
 read -p "Do you want React support ? (yes/no) " yn
 case $yn in
   [Yy]* )
     echo "Start install React modules ..."
-    npm install --save react react-dom 
+    npm install --save react react-dom
     echo "\n"
 
     read -p "Do you want gl-react support ? (yes/no) " yn
@@ -68,7 +68,7 @@ case $yn in
           * )
         ;;
 
-    esac  
+    esac
 
     ;;
 
