@@ -32,6 +32,10 @@ echo "      loaders: [" >> ${configName}
 echo "        {" >> ${configName}
 echo "          test: /\.css$/, loaders: ['style-loader', 'css-loader']" >> ${configName}
 echo "        }," >> ${configName}
+echo "        {" >> ${configName}
+echo "          test: /\.scss$/, loaders: ['sass-loader']" >> ${configName}
+echo "        }," >> ${configName}
+
 
 echo "        {" >> ${configName}
 echo "          test: /\.js$/,
